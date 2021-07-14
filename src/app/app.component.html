@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <app-header></app-header>
+  <section class="forum-sec">
+      <div class="container">
+          <app-menus [data]="menus"></app-menus>
+          <div class="forum-links-btn">
+              <a href="#" title=""><i class="fa fa-bars"></i></a>
+          </div>
+      </div>
+  </section>
+  <section class="forum-page">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 main-ws-sec">
+                <app-contents [data]="contents"></app-contents>
+              </div>
+              <div class="col-lg-4">
+                  <app-activity [data]="activity"></app-activity>
+                  <app-channels></app-channels>
+              </div>
+          </div>
+      </div>
+  </section>
+  <app-footer [data]="submenus"></app-footer>
+
+  <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+</div>

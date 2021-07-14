@@ -1,0 +1,7 @@
+<div class="forum-links">
+  <ul>
+      <li *ngFor="let row of data;index as i">
+          <a href="#" title="">{{row}} <span *ngIf="data.length!=i+1">/</span></a>
+      </li>
+  </ul>
+</div>

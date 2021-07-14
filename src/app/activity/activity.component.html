@@ -1,0 +1,16 @@
+<div class="widget widget-user">
+  <h3 class="title-wd">Activity <span style="font-size: small; float: right;">Top Activity of the Week</span></h3>
+  <ul>
+      <li *ngFor="let row of data;index as i" [ngClass]="row.is_pin?'pin':''">
+          <div class="usr-msg-details">
+              <div class="usr-ms-img"></div>
+              <div class="usr-mg-info">
+                  <h3>{{row.name}}</h3>
+                  <p>{{row.job}}</p>
+                  <p><i class="fa fa-clock"></i> {{row.updated_at}}</p>
+              </div>
+          </div>
+          <span *ngIf="row.is_pin"><i class="fa fa-bookmark"></i></span>
+      </li>
+  </ul>
+</div>
